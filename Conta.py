@@ -11,7 +11,14 @@ class Conta:
     
     def depositar(self, valor):
         self.saldo+= valor
+
     def sacar(self, valor):
-        self.saldo-= valor
+        if self.saldo < valor:
+            print('Saldo insuficiente!')
+            return False
+        else:
+            self.saldo-= valor
+            return True
+        
     def gerar_extrato(self):
         print(f'CONTA: {self.numero}\n CPF: {self.cpf}\n SALDO: {self.saldo}')
