@@ -109,7 +109,7 @@ saber o que é um "print".
 
 1. Rode o exemplo e observe as tentativas inválidas.
 2. Tente escrever (`conta.saldo = 1_000_000`) e anote o erro.
-3. Acrescente a validação de `bool`: `conta.depositar(True)` deve falhar.
+3. Confirme que `conta.depositar(True)` falha e explique por quê.
 4. Explique por que `_debitar` compara com `saldo_disponivel` e não com `_saldo`.
 5. **Desafio:** permita depósito de valor `Decimal` sem quebrar o resto.
 
